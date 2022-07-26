@@ -1,7 +1,7 @@
 ### Olá! Eu me chamo Ismael Andrade 👋
 
-- 🔭 Hoje trabalho como desenvolvedor Java
-- 🌱 Atualmente estudando Microservices com Java
+- 🔭 Hoje trabalho como Java Software Engineer na Iteris Consultoria e Software
+- 🌱 Atualmente estudando DDD e tipos de arquitetura com Java e Go Lang
 - 📫 Email de contato: maelandrade@yahoo.com.br | ismadrade@gmail.com
 
 <div align="center">
@@ -11,15 +11,16 @@
 </div>
   
   <div style="display: inline_block"><br>
-  <img align="center" alt="Ismadrade-Java" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-  <img align="center" alt="Ismadrade-Java" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
-  <img align="center" alt="Ismadrade-Java" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />  
-  <img align="center" alt="Ismadrade-Java" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
-  <img align="center" alt="Ismadrade-Java" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-  <img align="center" alt="Ismadrade-Java" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-  <img align="center" alt="Ismadrade-Java" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
-  <img align="center" alt="Ismadrade-Java" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-  <img align="center" alt="Ismadrade-Java" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />  
+  <img align="center" alt="Java" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+  <img align="center" alt="Spring" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
+  <img align="center" alt="Angular" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />  
+  <img align="center" alt="Vue" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
+  <img align="center" alt="Typescript" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+  <img align="center" alt="Javascript" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+  <img align="center" alt="Postgres" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+  <img align="center" alt="Mysql" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+  <img align="center" alt="Docker" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />  
+  <img align="center" alt="Go" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
 </div>
 
   ##
