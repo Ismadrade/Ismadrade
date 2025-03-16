@@ -1,7 +1,7 @@
 ### Olá! Eu me chamo Ismael Andrade 👋
 
 - 🔭 Hoje trabalho como Java Software Engineer na Iteris Consultoria e Software
-- 🌱 Atualmente estudando DDD e tipos de arquitetura com Java e Go Lang
+- 🌱 Atualmente estudando tipos de arquitetura com Java
 - 📫 Email de contato: maelandrade@yahoo.com.br | ismadrade@gmail.com
 
 <div align="center">
