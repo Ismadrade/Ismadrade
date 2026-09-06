@@ -1,0 +1,89 @@
+name: Metrics
+
+on:
+  # Executa a cada 12 horas
+  schedule:
+    - cron: "0 */12 * * *"
+  # Permite rodar manualmente pela aba "Actions"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  github-metrics:
+    name: Gerar SVGs de metricas
+    runs-on: ubuntu-latest
+    steps:
+      # ------------------------------------------------------------------
+      # 1) Card principal: cabecalho, atividade, comunidade, repositorios,
+      #    linguagens (in-depth), calendario isometrico, habitos e conquistas.
+      # ------------------------------------------------------------------
+      - name: Card principal (github-metrics.svg)
+        uses: lowlighter/metrics@latest
+        with:
+          # O GITHUB_TOKEN padrao ja cobre repos publicos. Para dados privados
+          # e plugins mais pesados (lines, habits completos, traffic), gere um
+          # PAT classico com escopo "repo" e salve como secret METRICS_TOKEN.
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          user: Ismadrade
+          filename: github-metrics.svg
+          template: classic
+          config_timezone: America/Sao_Paulo
+          committer_message: "chore: atualiza ${filename} [skip ci]"
+
+          base: header, activity, community, repositories
+
+          # Linguagens mais usadas (substitui o antigo "top-langs")
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_ignored: html, css, scss, tex, dockerfile, makefile
+
+          # Calendario de commits em 3D (ultimo ano)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Habitos de codigo: horarios, dias e linguagens mais frequentes
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+          # Conquistas do GitHub
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 0
+
+      # ------------------------------------------------------------------
+      # 2) Card de atividade: eventos recentes, commits notaveis,
+      #    issues/PRs em aberto e linhas de codigo alteradas.
+      # ------------------------------------------------------------------
+      - name: Card de atividade (github-metrics-activity.svg)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          user: Ismadrade
+          filename: github-metrics-activity.svg
+          template: classic
+          config_timezone: America/Sao_Paulo
+          committer_message: "chore: atualiza ${filename} [skip ci]"
+
+          base: ""
+
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 0
+          plugin_activity_filter: issue, pr, release, fork, review, ref/create
+
+          plugin_notable: yes
+          plugin_notable_types: commit
+
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
+
+          plugin_lines: yes
